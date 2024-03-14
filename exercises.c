@@ -188,5 +188,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
       }
       actual = temp;
     }
-  return NULL; 
+  return cabeza; 
 }
