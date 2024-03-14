@@ -348,3 +348,17 @@ exercises.c:79:25: error: ‘j’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 9c2c6e3
+Thu 14 Mar 2024 11:25:21 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:79:12: error: ‘i’ is used uninitialized [-Werror=uninitialized]
+   79 |   while (i < size1 && j < size2)
+      |          ~~^~~~~~~
+exercises.c:79:25: error: ‘j’ is used uninitialized [-Werror=uninitialized]
+   79 |   while (i < size1 && j < size2)
+      |                       ~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+313826c
