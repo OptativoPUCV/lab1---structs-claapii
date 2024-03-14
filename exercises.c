@@ -59,7 +59,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
         if (newArray == NULL) exit(EXIT_FAILURE);
         
         newArray[*newSize] = arr[i];
-        *newSize += 1;
+        (*newSize) += 1;
       }
     }
 
