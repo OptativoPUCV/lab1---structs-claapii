@@ -87,3 +87,9 @@ exercises.c:66:10: error: ‘newArray’ may be used uninitialized in this funct
 cc1: all warnings being treated as errors
 Compilation failed
 b0c0a04
+Thu 14 Mar 2024 08:48:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+86298c8
