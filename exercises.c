@@ -76,16 +76,15 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
   int size3 = size1 + size2;
-  int arr3[];
   for (int i = 0 ; i < size1 ; i++)
     {
-      arr3[i] = arr1[i];
+      result[i] = arr1[i];
     }
   for (int i = size1 ; i < size3 ; i++)
     {
-      arr3[i-size1] = arr2[i];
+      result[i-size1] = arr2[i];
     }
-  return arr3;
+  return result;
 }
 
 /*
