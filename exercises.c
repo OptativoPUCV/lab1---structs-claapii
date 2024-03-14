@@ -97,7 +97,7 @@ int checkSorted(int arr[], int size)
   int ascen = 1;
   int descen = 1;
   
-  for (int i = 0 ; i < size ; i++) //Descartar ascendente
+  for (int i = 0 ; i < size - 1 ; i++) //Descartar ascendente
     {
       if (arr[i] > arr[i+1]) ascen = 0;
       //Descartar descendente  
