@@ -390,3 +390,9 @@ exercises.c:80:27: error: ‘j’ is used uninitialized [-Werror=uninitialized]
 cc1: all warnings being treated as errors
 Compilation failed
 9655fd9
+Thu 14 Mar 2024 11:36:26 PM UTC: 
+ exercises.c | 20 +++++---------------
+ 1 file changed, 5 insertions(+), 15 deletions(-)
+ tests:  0|2
+total_score: 50/70
+0eab6e8
