@@ -100,20 +100,13 @@ int checkSorted(int arr[], int size)
   for (int i = 0 ; i < size ; i++) //Descartar ascendente
     {
       if (arr[i] > arr[i+1]) ascen = 0;
-    }
-  
-  for (int i = 0 ; i < size ; i++) //Descartar descendente
-    {
+      //Descartar descendente  
       if (arr[i] < arr[i+1]) descen = 0;
     }
 
-  if (ascen == 1) {
-      return 1;
-  } else if (descen == 1) {
-      return -1;
-  } else {
-      return 0;
-  }
+  if (ascen == 1) return 1;
+  else if (descen == 1) return -1;
+  else return 0;
   
 }
 
