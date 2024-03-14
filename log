@@ -162,3 +162,24 @@ Thu 14 Mar 2024 08:57:36 PM UTC:
  tests:  0|5
 total_score: 20/70
 1fc4716
+Thu 14 Mar 2024 08:58:13 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:8: error: array size missing in ‘newArray’
+   52 |   int *newArray[];
+      |        ^~~~~~~~
+exercises.c:59:18: error: assignment to expression with array type
+   59 |         newArray = realloc(newArray, (*newSize + 1) * sizeof(int));
+      |                  ^
+exercises.c:62:28: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   62 |         newArray[*newSize] = arr[i];
+      |                            ^
+exercises.c:66:10: error: returning ‘int **’ from a function with incompatible return type ‘int *’ [-Werror=incompatible-pointer-types]
+   66 |   return newArray;
+      |          ^~~~~~~~
+exercises.c:66:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+9752f24
