@@ -104,13 +104,10 @@ int checkSorted(int arr[], int size)
       if (arr[i] < arr[i+1]) descen = 0;
     }
 
-  if (ascen == 1) {
-      return 1;
-  } else if (descen == 1) {
-      return -1;
-  } else {
-      return 0;
-  }
+  if (ascen == 1) return 1;
+  else if (descen == 1) return -1;
+  else return 0;
+
   
 }
 
